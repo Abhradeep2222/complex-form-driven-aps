@@ -1,0 +1,21 @@
+<h1>Angular Multi-Step Form Example</h1>
+<mat-horizontal-stepper [linear]="isLinear">
+  <mat-step>
+    <form >
+      <ng-template matStepLabel>Basic Details</ng-template>
+      <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="Name" formControlName="name" required>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Description</mat-label>
+        <textarea matInput placeholder="Description" formControlName="description" required></textarea>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+
+
+</mat-horizontal-stepper>
