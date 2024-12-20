@@ -1,12 +1,13 @@
 // import { RouterOutlet } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { MatStepperModule } from '@angular/material/stepper';
+import {MatStepperModule} from '@angular/material/stepper';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [MatStepperModule],
+  imports: [MatStepperModule, MatFormFieldModule],
   templateUrl:'./app.component.html',
   styleUrls: ['./app.component.css']
 })

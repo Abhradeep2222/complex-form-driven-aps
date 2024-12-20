@@ -6,15 +6,18 @@ import { MatStepperModule } from '@angular/material/stepper';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
-import { AppComponent } from './app.component';
+// import { AppComponent } from './app.component';
+import { AppComponent } from '../app/app.component';
+
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { MatFormFieldModule } from '@angular/material/form-field';
 // import { MatFormFieldModule } from '@angular/material/form-field';
 
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [],
   imports: [
+    // AppModule,
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
@@ -28,6 +31,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatButtonToggleModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppModule],
 })
 export class AppModule { }
