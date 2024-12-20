@@ -5,8 +5,6 @@ import express from 'express';
 import { enableProdMode } from '@angular/core';
 import { join } from 'path';
 import { ngExpressEngine } from '@nguniversal/express-engine';
-
-
 import { createServer } from 'http';
 // import { AppServerModule } from '../src/main.server';
 import { renderModule } from '@angular/platform-server';
@@ -44,7 +42,6 @@ app.get('*.*', express.static(DIST_FOLDER, {
 app.get('*', (req: any, res: { render: (arg0: string, arg1: { req: any; }) => void; }) => {
   res.render('index', { req });
 });
-
 
 const server = createServer(app);
 

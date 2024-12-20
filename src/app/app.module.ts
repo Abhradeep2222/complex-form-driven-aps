@@ -11,7 +11,6 @@ import { AppComponent } from '../app/app.component';
 
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { MatFormFieldModule } from '@angular/material/form-field';
-// import { MatFormFieldModule } from '@angular/material/form-field';
 
 
 @NgModule({
@@ -23,7 +22,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     FormsModule,
     ReactiveFormsModule,
     MatStepperModule,
-    BrowserModule,
     MatInputModule,
     MatButtonModule,
     MatFormFieldModule,
